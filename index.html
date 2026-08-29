@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Alerte Chiens</title>
+
   <meta
     name="description"
     content="Alerte Chiens aide les propriétaires de chiens à mieux anticiper les rencontres pendant leurs promenades."
@@ -138,7 +139,7 @@
     .hero-button {
       display: inline-block;
       background: var(--orange);
-      color: white;
+      color: var(--white);
       padding: 14px 23px;
       border-radius: 999px;
       font-weight: 750;
@@ -163,6 +164,7 @@
       width: min(100%, 510px);
       height: auto;
       display: block;
+      border-radius: 32px;
       filter: drop-shadow(0 18px 20px rgba(73, 58, 52, 0.08));
     }
 
@@ -234,6 +236,16 @@
       font-weight: 700;
     }
 
+    footer a {
+      color: #FFF8ED;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer a:hover {
+      opacity: 0.8;
+    }
+
     [data-lang] {
       display: none;
     }
@@ -278,6 +290,7 @@
 
       .hero-image img {
         width: min(88%, 430px);
+        border-radius: 26px;
       }
 
       .cards {
@@ -314,6 +327,10 @@
       .card {
         padding: 24px;
       }
+
+      footer {
+        line-height: 1.9;
+      }
     }
   </style>
 </head>
@@ -327,19 +344,40 @@
     </div>
 
     <nav class="languages" aria-label="Choix de la langue">
-      <button class="language-button active" onclick="changeLanguage('fr', this)">FR</button>
-      <button class="language-button" onclick="changeLanguage('en', this)">EN</button>
-      <button class="language-button" onclick="changeLanguage('es', this)">ES</button>
+      <button
+        class="language-button active"
+        onclick="changeLanguage('fr', this)"
+      >
+        FR
+      </button>
+
+      <button
+        class="language-button"
+        onclick="changeLanguage('en', this)"
+      >
+        EN
+      </button>
+
+      <button
+        class="language-button"
+        onclick="changeLanguage('es', this)"
+      >
+        ES
+      </button>
     </nav>
   </header>
+
 
   <main>
 
     <!-- FRANÇAIS -->
+
     <div data-lang="fr" class="visible">
 
       <section class="hero">
+
         <div class="hero-copy">
+
           <h1>Alerte Chiens</h1>
 
           <div class="tagline">
@@ -354,6 +392,7 @@
           <a class="hero-button" href="#infos-fr">
             Ensemble, soyons attentifs
           </a>
+
         </div>
 
         <div class="hero-image">
@@ -362,12 +401,16 @@
             alt="Beagle Alerte Chiens tenant un cœur"
           >
         </div>
+
       </section>
+
 
       <section class="cards" id="infos-fr">
 
         <article class="card">
+
           <div class="card-icon">🐾</div>
+
           <h2>À propos</h2>
 
           <p>
@@ -385,10 +428,14 @@
             Pour des balades plus sereines, où les besoins de chacun peuvent
             être compris et respectés.
           </p>
+
         </article>
 
+
         <article class="card">
+
           <div class="card-icon">💌</div>
+
           <h2>Assistance</h2>
 
           <p>
@@ -396,17 +443,26 @@
             Alerte Chiens ?
           </p>
 
-          <p><strong>Contact :</strong></p>
+          <p>
+            <strong>Contact :</strong>
+          </p>
 
           <p>
-            <a class="contact" href="mailto:luagraphics.mailbox@gmail.com">
+            <a
+              class="contact"
+              href="mailto:luagraphics.mailbox@gmail.com"
+            >
               luagraphics.mailbox@gmail.com
             </a>
           </p>
+
         </article>
 
+
         <article class="card">
+
           <div class="card-icon">🌿</div>
+
           <h2>Notre intention</h2>
 
           <p>
@@ -423,17 +479,22 @@
             Ensemble, créons un environnement positif pour les chiens
             et leurs humains.
           </p>
+
         </article>
 
       </section>
+
     </div>
 
 
     <!-- ENGLISH -->
+
     <div data-lang="en">
 
       <section class="hero">
+
         <div class="hero-copy">
+
           <h1>Alerte Chiens</h1>
 
           <div class="tagline">
@@ -448,6 +509,7 @@
           <a class="hero-button" href="#infos-en">
             Together, let's stay attentive
           </a>
+
         </div>
 
         <div class="hero-image">
@@ -456,12 +518,16 @@
             alt="Alerte Chiens beagle holding a heart"
           >
         </div>
+
       </section>
+
 
       <section class="cards" id="infos-en">
 
         <article class="card">
+
           <div class="card-icon">🐾</div>
+
           <h2>About</h2>
 
           <p>
@@ -479,27 +545,40 @@
             For more peaceful walks, where everyone's needs can be
             understood and respected.
           </p>
+
         </article>
 
+
         <article class="card">
+
           <div class="card-icon">💌</div>
+
           <h2>Support</h2>
 
           <p>
             Have a question, a problem or a suggestion about Alerte Chiens?
           </p>
 
-          <p><strong>Contact:</strong></p>
+          <p>
+            <strong>Contact:</strong>
+          </p>
 
           <p>
-            <a class="contact" href="mailto:luagraphics.mailbox@gmail.com">
+            <a
+              class="contact"
+              href="mailto:luagraphics.mailbox@gmail.com"
+            >
               luagraphics.mailbox@gmail.com
             </a>
           </p>
+
         </article>
 
+
         <article class="card">
+
           <div class="card-icon">🌿</div>
+
           <h2>Our intention</h2>
 
           <p>
@@ -516,17 +595,22 @@
             Together, let's create a positive environment for dogs
             and their humans.
           </p>
+
         </article>
 
       </section>
+
     </div>
 
 
     <!-- ESPAÑOL -->
+
     <div data-lang="es">
 
       <section class="hero">
+
         <div class="hero-copy">
+
           <h1>Alerte Chiens</h1>
 
           <div class="tagline">
@@ -541,6 +625,7 @@
           <a class="hero-button" href="#infos-es">
             Juntos, estemos atentos
           </a>
+
         </div>
 
         <div class="hero-image">
@@ -549,12 +634,16 @@
             alt="Beagle de Alerte Chiens sosteniendo un corazón"
           >
         </div>
+
       </section>
+
 
       <section class="cards" id="infos-es">
 
         <article class="card">
+
           <div class="card-icon">🐾</div>
+
           <h2>Acerca de</h2>
 
           <p>
@@ -572,10 +661,14 @@
             Para paseos más tranquilos, donde las necesidades de cada uno
             puedan ser comprendidas y respetadas.
           </p>
+
         </article>
 
+
         <article class="card">
+
           <div class="card-icon">💌</div>
+
           <h2>Asistencia</h2>
 
           <p>
@@ -583,17 +676,26 @@
             Alerte Chiens?
           </p>
 
-          <p><strong>Contacto:</strong></p>
+          <p>
+            <strong>Contacto:</strong>
+          </p>
 
           <p>
-            <a class="contact" href="mailto:luagraphics.mailbox@gmail.com">
+            <a
+              class="contact"
+              href="mailto:luagraphics.mailbox@gmail.com"
+            >
               luagraphics.mailbox@gmail.com
             </a>
           </p>
+
         </article>
 
+
         <article class="card">
+
           <div class="card-icon">🌿</div>
+
           <h2>Nuestra intención</h2>
 
           <p>
@@ -610,36 +712,63 @@
             Juntos, creemos un entorno positivo para los perros
             y sus humanos.
           </p>
+
         </article>
 
       </section>
+
     </div>
 
+
     <div class="little-dog">
-      <img src="splash-icon.png" alt="">
+      <img
+        src="splash-icon.png"
+        alt=""
+      >
     </div>
 
   </main>
 
+
   <footer>
+
     <strong>© 2026 Alerte Chiens</strong>
-    &nbsp;·&nbsp; Imaginé par Lua
-    &nbsp;·&nbsp; ❤️ Merci d'être attentionné
+
+    &nbsp;·&nbsp;
+
+    Imaginé par Lua
+
+    &nbsp;·&nbsp;
+
+    ❤️ Merci d'être attentionné
+
+    &nbsp;·&nbsp;
+
+    <a href="privacy.html">
+      Politique de confidentialité
+    </a>
+
   </footer>
+
 
   <script>
     function changeLanguage(language, button) {
-      document.querySelectorAll("[data-lang]").forEach(function(section) {
-        section.classList.remove("visible");
-      });
 
-      document.querySelector(
-        '[data-lang="' + language + '"]'
-      ).classList.add("visible");
+      document
+        .querySelectorAll("[data-lang]")
+        .forEach(function(section) {
+          section.classList.remove("visible");
+        });
 
-      document.querySelectorAll(".language-button").forEach(function(item) {
-        item.classList.remove("active");
-      });
+      document
+        .querySelector('[data-lang="' + language + '"]')
+        .classList.add("visible");
+
+      document
+        .querySelectorAll(".language-button")
+        .forEach(function(item) {
+          item.classList.remove("active");
+        });
 
       button.classList.add("active");
 
