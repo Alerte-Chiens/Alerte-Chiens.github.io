@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Politique de confidentialité · Alerte Chiens</title>
+
+  <meta
+    name="description"
+    content="Politique de confidentialité de l'application Alerte Chiens."
+  >
+
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <style>
+    :root {
+      --cream: #FDF0DB;
+      --cream-light: #FFF9EF;
+      --green: #496B56;
+      --green-dark: #355142;
+      --orange: #E98252;
+      --orange-dark: #D96E3E;
+      --brown: #493A34;
+      --white: #FFFFFF;
+      --shadow: 0 12px 30px rgba(73, 58, 52, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--brown);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 28px 28px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--green-dark);
+      font-weight: 800;
+      font-size: 21px;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+    }
+
+    .languages {
+      display: flex;
+      gap: 7px;
+    }
+
+    .language-button {
+      border: 1px solid rgba(73, 107, 86, 0.22);
+      background: rgba(255, 255, 255, 0.5);
+      color: var(--green-dark);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .language-button.active {
+      background: var(--green);
+      color: var(--white);
+      border-color: var(--green);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 35px 28px 70px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .intro img {
+      width: 110px;
+      max-width: 35vw;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--green-dark);
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      margin: 15px auto 0;
+      max-width: 680px;
+      color: var(--orange-dark);
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .policy {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(73, 107, 86, 0.10);
+      border-radius: 28px;
+      padding: 38px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      color: var(--green-dark);
+      margin-top: 34px;
+      margin-bottom: 10px;
+      font-size: 23px;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin: 10px 0 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      color: var(--orange-dark);
+      font-weight: 750;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 30px;
+      background: var(--orange);
+      color: white;
+      padding: 12px 21px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 750;
+    }
+
+    [data-lang] {
+      display: none;
+    }
+
+    [data-lang].visible {
+      display: block;
+    }
+
+    footer {
+      background: var(--green-dark);
+      color: #FFF8ED;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 620px) {
+      header {
+        padding: 20px 18px 5px;
+      }
+
+      .brand span {
+        display: none;
+      }
+
+      main {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .policy {
+        padding: 25px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="index.html">
+    <img src="icon.png" alt="Alerte Chiens">
+    <span>Alerte Chiens</span>
+  </a>
+
+  <nav class="languages" aria-label="Choix de la langue">
+    <button class="language-button active" onclick="changeLanguage('fr', this)">FR</button>
+    <button class="language-button" onclick="changeLanguage('en', this)">EN</button>
+    <button class="language-button" onclick="changeLanguage('es', this)">ES</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- FRANÇAIS -->
+  <div data-lang="fr" class="visible">
+
+    <section class="intro">
+      <img src="splash-icon.png" alt="">
+      <h1>Politique de confidentialité</h1>
+      <p class="subtitle">
+        Votre confiance compte. Voici comment Alerte Chiens utilise
+        les informations nécessaires à son fonctionnement.
+      </p>
+    </section>
+
+    <section class="policy">
+
+      <h2>1. À propos d'Alerte Chiens</h2>
+
+      <p>
+        Alerte Chiens est une application destinée à aider les propriétaires
+        de chiens à mieux anticiper les rencontres pendant leurs promenades
+        grâce au partage de signalements utiles à proximité.
+      </p>
+
+      <p>
+        L'application ne nécessite pas la création d'un compte utilisateur
+        classique avec nom, adresse e-mail ou mot de passe.
+      </p>
+
+
+      <h2>2. Informations utilisées par l'application</h2>
+
+      <p>
+        Pour fournir ses fonctionnalités, Alerte Chiens peut traiter les
+        informations suivantes :
+      </p>
+
+      <ul>
+        <li>
+          votre position géographique lorsque vous utilisez une fonctionnalité
+          nécessitant votre localisation ;
+        </li>
+
+        <li>
+          les coordonnées géographiques associées aux signalements effectués
+          dans l'application ;
+        </li>
+
+        <li>
+          les informations relatives au type de signalement, par exemple la
+          présence d'un chien détaché ou d'un chien vu seul ;
+        </li>
+
+        <li>
+          les informations nécessaires au fonctionnement d'une balade active,
+          notamment son heure de début et les données de localisation utiles
+          à cette fonctionnalité ;
+        </li>
+
+        <li>
+          un identifiant technique associé à la session ou à l'installation
+          de l'application, utilisé pour assurer le fonctionnement du service ;
+        </li>
+
+        <li>
+          des informations techniques liées au signalement, telles que
+          l'heure de création ou la précision de localisation lorsqu'elles
+          sont disponibles.
+        </li>
+      </ul>
+
+
+      <h2>3. Utilisation de la localisation</h2>
+
+      <p>
+        La localisation est utilisée uniquement pour les fonctionnalités
+        directement liées à Alerte Chiens, notamment pour afficher les
+        informations pertinentes autour de vous, créer des signalements
+        géolocalisés et permettre le fonctionnement des balades actives.
+      </p>
+
+      <p>
+        L'accès à votre position est soumis à votre autorisation via les
+        réglages de votre appareil. Vous pouvez modifier ou retirer cette
+        autorisation à tout moment dans les réglages de confidentialité
+        de votre téléphone.
+      </p>
+
+
+      <h2>4. Signalements partagés</h2>
+
+      <p>
+        Les signalements créés dans Alerte Chiens sont destinés à être
+        consultés par les autres utilisateurs de l'application afin de leur
+        permettre d'anticiper les rencontres à proximité.
+      </p>
+
+      <p>
+        Ils peuvent notamment inclure leur localisation approximative ou
+        précise selon les données disponibles, leur type et leur date
+        de création.
+      </p>
+
+
+      <h2>5. Hébergement et prestataires techniques</h2>
+
+      <p>
+        Alerte Chiens utilise Supabase comme infrastructure technique
+        notamment pour l'authentification anonyme, le stockage et la mise
+        à disposition des données nécessaires au fonctionnement de
+        l'application.
+      </p>
+
+      <p>
+        Les prestataires techniques ayant accès aux données dans le cadre
+        du fonctionnement du service sont tenus de les traiter conformément
+        aux protections applicables à leurs services.
+      </p>
+
+
+      <h2>6. Publicité et vente de données</h2>
+
+      <p>
+        Alerte Chiens ne vend pas vos données personnelles.
+      </p>
+
+      <p>
+        L'application n'utilise pas les données de localisation dans le but
+        d'afficher de la publicité ciblée.
+      </p>
+
+
+      <h2>7. Conservation des données</h2>
+
+      <p>
+        Les données sont conservées uniquement pendant la durée nécessaire
+        au fonctionnement, à la sécurité et à la maintenance du service,
+        sauf lorsqu'une durée différente est requise par une obligation
+        légale.
+      </p>
+
+      <p>
+        Les signalements sont conçus pour fournir des informations récentes
+        et pertinentes aux utilisateurs de l'application.
+      </p>
+
+
+      <h2>8. Suppression et demandes relatives aux données</h2>
+
+      <p>
+        Si vous souhaitez demander la suppression d'informations associées
+        à votre utilisation d'Alerte Chiens, obtenir des renseignements sur
+        les données traitées ou exercer un droit relatif à vos données,
+        vous pouvez nous contacter à :
+      </p>
+
+      <p>
+        <a
+          class="contact"
+          href="mailto:luagraphics.mailbox@gmail.com"
+        >
+          luagraphics.mailbox@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Afin de protéger les utilisateurs, des informations complémentaires
+        peuvent être demandées lorsqu'elles sont nécessaires pour identifier
+        les données concernées par une demande.
+      </p>
+
+
+      <h2>9. Notifications</h2>
+
+      <p>
+        Alerte Chiens peut utiliser les notifications de votre appareil
+        pour certaines fonctionnalités de l'application.
+        Vous pouvez autoriser ou désactiver les notifications à tout moment
+        depuis les réglages de votre appareil.
+      </p>
+
+
+      <h2>10. Sécurité</h2>
+
+      <p>
+        Des mesures techniques raisonnables sont mises en œuvre afin de
+        protéger les informations utilisées par Alerte Chiens et de limiter
+        l'accès aux données aux besoins nécessaires au fonctionnement
+        du service.
+      </p>
+
+
+      <h2>11. Modifications de cette politique</h2>
+
+      <p>
+        Cette politique de confidentialité peut être mise à jour lorsque
+        les fonctionnalités de l'application ou ses pratiques en matière
+        de données évoluent.
+      </p>
+
+      <p>
+        La version publiée sur cette page constitue la version en vigueur.
+      </p>
+
+
+      <h2>12. Contact</h2>
+
+      <p>
+        Pour toute question concernant cette politique de confidentialité :
+      </p>
+
+      <p>
+        <a
+          class="contact"
+          href="mailto:luagraphics.mailbox@gmail.com"
+        >
+          luagraphics.mailbox@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Dernière mise à jour : 29 août 2026.
+      </p>
+
+      <a class="back" href="index.html">
+        Retour à Alerte Chiens
+      </a>
+
+    </section>
+  </div>
+
+
+  <!-- ENGLISH -->
+  <div data-lang="en">
+
+    <section class="intro">
+      <img src="splash-icon.png" alt="">
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Your trust matters. Here is how Alerte Chiens uses the information
+        required to provide its services.
+      </p>
+    </section>
+
+    <section class="policy">
+
+      <h2>1. About Alerte Chiens</h2>
+
+      <p>
+        Alerte Chiens is an application designed to help dog owners better
+        anticipate encounters during their walks by sharing useful nearby
+        reports.
+      </p>
+
+      <p>
+        The application does not require a traditional user account with
+        a name, email address or password.
+      </p>
+
+
+      <h2>2. Information used by the application</h2>
+
+      <p>
+        To provide its features, Alerte Chiens may process:
+      </p>
+
+      <ul>
+        <li>
+          your geographic location when you use a feature that requires it;
+        </li>
+
+        <li>
+          geographic coordinates associated with reports created in the app;
+        </li>
+
+        <li>
+          information about the type of report, such as an off-leash dog or
+          a dog seen alone;
+        </li>
+
+        <li>
+          information required for active walks, including their start time
+          and location information necessary for this feature;
+        </li>
+
+        <li>
+          a technical identifier associated with the app session or
+          installation, used to operate the service;
+        </li>
+
+        <li>
+          technical information related to a report, such as its creation
+          time or location accuracy when available.
+        </li>
+      </ul>
+
+
+      <h2>3. Location data</h2>
+
+      <p>
+        Location is used only for features directly related to Alerte Chiens,
+        including displaying relevant nearby information, creating
+        geolocated reports and operating active walks.
+      </p>
+
+      <p>
+        Access to your location requires your permission through your
+        device settings. You can change or withdraw that permission
+        at any time.
+      </p>
+
+
+      <h2>4. Shared reports</h2>
+
+      <p>
+        Reports created in Alerte Chiens are intended to be visible to other
+        users of the application so they can better anticipate nearby
+        encounters.
+      </p>
+
+      <p>
+        Reports may include their approximate or precise location depending
+        on the available information, their type and their creation date.
+      </p>
+
+
+      <h2>5. Hosting and technical service providers</h2>
+
+      <p>
+        Alerte Chiens uses Supabase as part of its technical infrastructure,
+        including anonymous authentication, storage and access to information
+        required for the operation of the application.
+      </p>
+
+      <p>
+        Technical service providers that access data as part of operating
+        the service are expected to process it under the protections
+        applicable to their services.
+      </p>
+
+
+      <h2>6. Advertising and sale of data</h2>
+
+      <p>
+        Alerte Chiens does not sell your personal data.
+      </p>
+
+      <p>
+        The application does not use location information for targeted
+        advertising.
+      </p>
+
+
+      <h2>7. Data retention</h2>
+
+      <p>
+        Data is retained only for as long as necessary to operate, secure
+        and maintain the service, unless a different retention period is
+        required by law.
+      </p>
+
+      <p>
+        Reports are designed to provide users with recent and relevant
+        information.
+      </p>
+
+
+      <h2>8. Deletion and data requests</h2>
+
+      <p>
+        If you would like to request deletion of information associated
+        with your use of Alerte Chiens, obtain information about processed
+        data, or make another privacy-related request, please contact:
+      </p>
+
+      <p>
+        <a
+          class="contact"
+          href="mailto:luagraphics.mailbox@gmail.com"
+        >
+          luagraphics.mailbox@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Additional information may be requested when necessary to identify
+        the data concerned by a request and protect users.
+      </p>
+
+
+      <h2>9. Notifications</h2>
+
+      <p>
+        Alerte Chiens may use device notifications for certain app features.
+        You can enable or disable notifications at any time through your
+        device settings.
+      </p>
+
+
+      <h2>10. Security</h2>
+
+      <p>
+        Reasonable technical measures are used to protect information
+        processed by Alerte Chiens and to limit access to what is necessary
+        for the operation of the service.
+      </p>
+
+
+      <h2>11. Changes to this policy</h2>
+
+      <p>
+        This Privacy Policy may be updated when the application's features
+        or data practices change.
+      </p>
+
+      <p>
+        The version published on this page is the current version.
+      </p>
+
+
+      <h2>12. Contact</h2>
+
+      <p>
+        For questions regarding this Privacy Policy:
+      </p>
+
+      <p>
+        <a
+          class="contact"
+          href="mailto:luagraphics.mailbox@gmail.com"
+        >
+          luagraphics.mailbox@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Last updated: August 29, 2026.
+      </p>
+
+      <a class="back" href="index.html">
+        Back to Alerte Chiens
+      </a>
+
+    </section>
+  </div>
+
+
+  <!-- ESPAÑOL -->
+  <div data-lang="es">
+
+    <section class="intro">
+      <img src="splash-icon.png" alt="">
+      <h1>Política de privacidad</h1>
+      <p class="subtitle">
+        Tu confianza es importante. Aquí explicamos cómo Alerte Chiens
+        utiliza la información necesaria para prestar sus servicios.
+      </p>
+    </section>
+
+    <section class="policy">
+
+      <h2>1. Acerca de Alerte Chiens</h2>
+
+      <p>
+        Alerte Chiens es una aplicación diseñada para ayudar a los
+        propietarios de perros a anticipar mejor los encuentros durante
+        sus paseos mediante el intercambio de avisos útiles cercanos.
+      </p>
+
+      <p>
+        La aplicación no requiere una cuenta de usuario tradicional con
+        nombre, dirección de correo electrónico o contraseña.
+      </p>
+
+
+      <h2>2. Información utilizada por la aplicación</h2>
+
+      <p>
+        Para proporcionar sus funciones, Alerte Chiens puede tratar:
+      </p>
+
+      <ul>
+        <li>
+          tu ubicación geográfica cuando utilizas una función que la requiere;
+        </li>
+
+        <li>
+          las coordenadas geográficas asociadas a los avisos creados
+          en la aplicación;
+        </li>
+
+        <li>
+          información sobre el tipo de aviso, por ejemplo un perro sin correa
+          o un perro visto solo;
+        </li>
+
+        <li>
+          información necesaria para los paseos activos, incluida su hora
+          de inicio y los datos de ubicación necesarios para esta función;
+        </li>
+
+        <li>
+          un identificador técnico asociado a la sesión o instalación de
+          la aplicación, utilizado para el funcionamiento del servicio;
+        </li>
+
+        <li>
+          información técnica relacionada con el aviso, como su hora
+          de creación o la precisión de la ubicación cuando esté disponible.
+        </li>
+      </ul>
+
+
+      <h2>3. Datos de ubicación</h2>
+
+      <p>
+        La ubicación se utiliza únicamente para funciones directamente
+        relacionadas con Alerte Chiens, como mostrar información relevante
+        cercana, crear avisos geolocalizados y permitir el funcionamiento
+        de los paseos activos.
+      </p>
+
+      <p>
+        El acceso a tu ubicación requiere tu autorización mediante los
+        ajustes de tu dispositivo. Puedes modificar o retirar ese permiso
+        en cualquier momento.
+      </p>
+
+
+      <h2>4. Avisos compartidos</h2>
+
+      <p>
+        Los avisos creados en Alerte Chiens están destinados a ser
+        consultados por otros usuarios de la aplicación para ayudarles
+        a anticipar encuentros cercanos.
+      </p>
+
+      <p>
+        Pueden incluir su ubicación aproximada o precisa según la información
+        disponible, el tipo de aviso y la fecha de creación.
+      </p>
+
+
+      <h2>5. Alojamiento y proveedores técnicos</h2>
+
+      <p>
+        Alerte Chiens utiliza Supabase como parte de su infraestructura
+        técnica, incluida la autenticación anónima, el almacenamiento
+        y el acceso a la información necesaria para el funcionamiento
+        de la aplicación.
+      </p>
+
+      <p>
+        Los proveedores técnicos que tengan acceso a datos para prestar
+        el servicio deben tratarlos de acuerdo con las protecciones
+        aplicables a sus servicios.
+      </p>
+
+
+      <h2>6. Publicidad y venta de datos</h2>
+
+      <p>
+        Alerte Chiens no vende tus datos personales.
+      </p>
+
+      <p>
+        La aplicación no utiliza los datos de ubicación para mostrar
+        publicidad dirigida.
+      </p>
+
+
+      <h2>7. Conservación de los datos</h2>
+
+      <p>
+        Los datos se conservan únicamente durante el tiempo necesario
+        para operar, proteger y mantener el servicio, salvo que la ley
+        requiera un periodo diferente.
+      </p>
+
+      <p>
+        Los avisos están diseñados para proporcionar información reciente
+        y relevante a los usuarios.
+      </p>
+
+
+      <h2>8. Eliminación y solicitudes relativas a los datos</h2>
+
+      <p>
+        Si deseas solicitar la eliminación de información asociada con
+        tu uso de Alerte Chiens, obtener información sobre los datos
+        tratados o realizar otra solicitud relacionada con la privacidad,
+        puedes contactar con:
+      </p>
+
+      <p>
+        <a
+          class="contact"
+          href="mailto:luagraphics.mailbox@gmail.com"
+        >
+          luagraphics.mailbox@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Cuando sea necesario, podremos solicitar información adicional
+        para identificar los datos relacionados con la solicitud y proteger
+        a los usuarios.
+      </p>
+
+
+      <h2>9. Notificaciones</h2>
+
+      <p>
+        Alerte Chiens puede utilizar las notificaciones del dispositivo
+        para determinadas funciones de la aplicación. Puedes activarlas
+        o desactivarlas en cualquier momento desde los ajustes de tu
+        dispositivo.
+      </p>
+
+
+      <h2>10. Seguridad</h2>
+
+      <p>
+        Se aplican medidas técnicas razonables para proteger la información
+        tratada por Alerte Chiens y limitar el acceso a lo necesario para
+        el funcionamiento del servicio.
+      </p>
+
+
+      <h2>11. Cambios en esta política</h2>
+
+      <p>
+        Esta Política de privacidad puede actualizarse cuando cambien las
+        funciones de la aplicación o sus prácticas relacionadas con los
+        datos.
+      </p>
+
+      <p>
+        La versión publicada en esta página constituye la versión vigente.
+      </p>
+
+
+      <h2>12. Contacto</h2>
+
+      <p>
+        Para cualquier pregunta relacionada con esta Política de privacidad:
+      </p>
+
+      <p>
+        <a
+          class="contact"
+          href="mailto:luagraphics.mailbox@gmail.com"
+        >
+          luagraphics.mailbox@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Última actualización: 29 de agosto de 2026.
+      </p>
+
+      <a class="back" href="index.html">
+        Volver a Alerte Chiens
+      </a>
+
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Alerte Chiens · Imaginé par Lua
+</footer>
+
+<script>
+  function changeLanguage(language, button) {
+    document.querySelectorAll("[data-lang]").forEach(function(section) {
+      section.classList.remove("visible");
+    });
+
+    document.querySelector(
+      '[data-lang="' + language + '"]'
+    ).classList.add("visible");
+
+    document.querySelectorAll(".language-button").forEach(function(item) {
+      item.classList.remove("active");
+    });
+
+    button.classList.add("active");
+    document.documentElement.lang = language;
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+</body>
+</html>
